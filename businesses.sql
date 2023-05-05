@@ -1,0 +1,22 @@
+CREATE TABLE businesses (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  image_url VARCHAR(255),
+  url VARCHAR(255),
+  review_count INT,
+  categories VARCHAR(255),
+  rating DECIMAL(2,1),
+  latitude DECIMAL(10,8),
+  longitude DECIMAL(11,8),
+  price VARCHAR(10),
+  phone VARCHAR(20),
+  display_phone VARCHAR(20),
+  address1 VARCHAR(255),
+  address2 VARCHAR(255),
+  city VARCHAR(50),
+  state VARCHAR(50),
+  country VARCHAR(50),
+  zip_code VARCHAR(20),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
